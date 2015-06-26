@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rotate Image Src</title>
+<style type="text/css">
+    img {
+        position: absolute;
+        top: 50px;
+        height: 300px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+   
+<script src="../../jquery/jquery-1.11.1.js"></script>
+
+<script type="text/javascript">    
+var images = new Array ('CoffeeBoyRoy.jpg', 'HoneymoonRoy.jpg', 'KaraokeRoy2.jpg');
+var index = 1;
+
+function rotateImage()
+{
+  $('#myImage').fadeOut('fast', function() {
+    
+        var imgPath = "../../a100-dev/graphics/";
+        $(this).attr('src', imgPath + images[index]);
+    
+        $(this).fadeIn('slow', function()
+        {
+            if (index == images.length-1)
+            {
+              index = 0;
+            }
+            else
+            {
+              index++;
+            }
+        });
+    });
+}
+
+$(document).ready(function()
+{
+  setInterval (rotateImage, 2500);
+});
+</script>
+</head>
+
+<body>
+<div id="test">
+  <img id="myImage" src="../../a100-dev/graphics/KaraokeRoy2.jpg" />
+</div>
+</body>
+</html>

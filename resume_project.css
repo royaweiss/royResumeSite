@@ -1,0 +1,139 @@
+p
+{
+    margin: 20px;
+}
+
+ul
+{
+    position: relative;
+    list-style-type: none;
+    float: none;
+    padding-left: 15px;
+    padding-top: 10px;
+    list-style-position: inside;
+}
+
+ul.contents
+{
+    position: relative;
+    list-style-type: disc;
+    float: none;
+    padding-left: 15px;
+}
+
+li.contents
+{
+    padding: 20px;
+}
+
+a
+{
+    text-decoration: none;
+    color: navy;
+    font-weight: bold;
+}
+
+.resetLinks
+{
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+}
+
+a:hover 
+{
+    background-color: white;
+}
+
+a:visited
+{
+    color: navy;
+}
+
+.jobHeading1
+{
+    list-style-type: none;
+    font-weight: bold;
+}
+
+.jobHeading2
+{
+    list-style-type: none;
+    font-weight: bold;
+}
+
+span.jobDate
+{
+    color: maroon;
+    position: absolute;
+    right: 10px;
+}
+
+.selectedCategory
+{
+    display: none;
+}
+
+.visible
+{
+    display: block;
+}
+
+#resume
+{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 600px;
+    border: 2px solid navy;
+    border-radius: 10px;
+}
+
+#header
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 20%;
+    border: none;
+    background-color: lightgrey;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#pics
+{
+    position: absolute;
+    top: 5%;
+    right: 8%;
+    width: 22%;
+    height: 15%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#content
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 90%;
+    height: 70%;
+    border: 1px solid navy;
+    border-radius: 0px 0px 10px 10px;
+    background-color: papayawhip;
+    overflow-y: auto;
+}
+
+#currentCategory
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 50%;
+    height: 5%;
+    border: 1px solid red;
+    background-color: gray;
+    color: blue;
+    overflow-y: auto;
+}

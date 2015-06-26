@@ -8,8 +8,15 @@ $(document).ready(function () {
         displayContent(category);
         resetDefaults();
         $(this).css('color', 'brown');
-    });    
+    }); 
+
+/*
+    $(function() {
+        $( "#tabs" ).tabs();
+    }); 
+*/      
 });
+
 
 function resetDefaults()
 {
@@ -231,8 +238,8 @@ function displayContent(category)
         "</ul>";       
         break;
     
-        case "Contact Information" :
-        contents = 
+        case "Contact Information" :  
+        contents =
         "<ul class='contents'>" +
             "<li class='contactHeading'>" +
                 "Phone" +
@@ -246,8 +253,26 @@ function displayContent(category)
             "<li class='contactHeading'>" +
                 "Git Hub" +
             "</li>" +
-        "</ul>"    
-        break;    
+        "</ul>" +;    
+        break;
+        
+        case "Contact Information with Tabs" :
+        contents =
+        "<ul class='contents'>" +
+            "<li class='contactHeading'>" +
+                "<a href='#tabs-1'>Phone</a>" +
+            "</li>" +
+            "<li class='contactHeading'>" +
+                "<a href='#tabs-2'>Email</a>" +
+            "</li>" +
+            "<li class='contactHeading'>" +
+                "<a href='#tabs-3'>Linked-In</a>" +
+            "</li>" +
+            "<li class='contactHeading'>" +
+                "<a href='#tabs-4'>Git Hub</a>" +
+            "</li>" +
+        "</ul>" +;    
+        break;
     }
     
     $("#content").slideUp(300, function(){
