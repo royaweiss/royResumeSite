@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+
+    <meta charset="utf-8" />
+    <title>Contact Info UI Tabs - Default functionality</title>
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" href="resume_project.css"> 
+
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+<script>
+$(function() {
+    $( "#tabs" ).tabs();
+});
+</script> 
+
+</head>
+
+<body>
+<div id="tabs">
+  <ul>
+	    <li><a href="#Phone">Phone</a></li>
+	    <li><a href="#Email">Email</a></li>
+	    <li><a href="#Linked-In">Linked-In</a></li>
+      <li><a href="#Git-Hub">Git Hub</a></li>
+  </ul>
+  <div class='tabs' id="Phone">
+    	<p>home: (914) 472.1660</p>
+      <p>cell: (914) 320.6349</p>
+  </div>
+  <div class='tabs' id="Email">
+    	<form action="mailto:royaweiss1@gmail.com" method="get" enctype="text/plain">
+          <p>Name: <input type="text" name="name" /></p>
+          <p>Email: <input type="text" name="email" /></p>
+          <p>Comments:</p>
+          <textarea cols="30" rows="5" name="comments"></textarea></p>
+          <p><input type="submit" name="submit" value="Send" />
+          <input type="reset" name="reset" value="Clear Form" /></p>
+      </form>
+  </div>
+  <div class='tabs' id="Linked-In">
+    	Linked-In
+  </div>
+  <div class='tabs' id="Git-Hub">
+      Git Hub
+  </div>
+</div>
+</body>
+</html>

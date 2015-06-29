@@ -8,15 +8,17 @@ $(document).ready(function () {
         displayContent(category);
         resetDefaults();
         $(this).css('color', 'brown');
-    }); 
+    });
 
-/*
     $(function() {
         $( "#tabs" ).tabs();
-    }); 
-*/      
+    });
+    
 });
 
+$(function() {
+    $( "#tabs" ).tabs();
+});
 
 function resetDefaults()
 {
@@ -48,7 +50,7 @@ function displayContent(category)
         "<p>" +
             "I am a programmer and web developer with skills and experience in a wide variety of technologies, " +
             "including open source, Microsoft and others. Having tackled a myriad of positions and projects, " +
-            "I’m always learning new skills and seeking to improve my knowledge of web development." +
+            "I&#39;m always learning new skills and seeking to improve my knowledge of web development." +
         "</p>";        
         break;
     
@@ -121,7 +123,7 @@ function displayContent(category)
             "</li>" +
             "<li>" +
                 "Developed prototype with HTML5, CSS3, JavaScript and JQuery " +
-                "for an informational web site to promote menu designer’s business." +
+                "for an informational web site to promote menu designer&#39;s business." +
             "</li>" +
         "</ul>" +
         
@@ -134,7 +136,7 @@ function displayContent(category)
                 "<span class='jobDate'>2012</span>" +
             "</li>" +
             "<li>" +
-                "Designed and performed back-end coding, of web-based reports for Barclay’s Hedge Fund Symposium." +
+                "Designed and performed back-end coding, of web-based reports for Barclay&#39;s Hedge Fund Symposium." +
             "</li>" +
             "<li>" +
                 "Coded system for email registration, notification and administration." +
@@ -253,25 +255,12 @@ function displayContent(category)
             "<li class='contactHeading'>" +
                 "Git Hub" +
             "</li>" +
-        "</ul>" +;    
-        break;
-        
+        "</ul>";    
+        break; 
+
         case "Contact Information with Tabs" :
         contents =
-        "<ul class='contents'>" +
-            "<li class='contactHeading'>" +
-                "<a href='#tabs-1'>Phone</a>" +
-            "</li>" +
-            "<li class='contactHeading'>" +
-                "<a href='#tabs-2'>Email</a>" +
-            "</li>" +
-            "<li class='contactHeading'>" +
-                "<a href='#tabs-3'>Linked-In</a>" +
-            "</li>" +
-            "<li class='contactHeading'>" +
-                "<a href='#tabs-4'>Git Hub</a>" +
-            "</li>" +
-        "</ul>" +;    
+        "<iframe src='ContactInfo_UITabs.html'></iframe>";    
         break;
     }
     

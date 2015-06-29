@@ -26,6 +26,24 @@ li.contents
     padding: 20px;
 }
 
+iframe {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.ui-tabs .ui-tabs-nav{
+    display: table;
+    font-size: small;
+}
+.ui-tabs .ui-tabs-nav li{
+    display: table-cell;
+    position: static;
+    float:none;
+    font-size: small;
+}
+
 a
 {
     text-decoration: none;
